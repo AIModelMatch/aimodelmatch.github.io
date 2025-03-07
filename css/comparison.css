@@ -1,0 +1,184 @@
+/* Special styles for the vehicle comparison page */
+
+/* Page layout and sections */
+.comparison-notice {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.comparison-notice p {
+    margin: 0;
+    color: #856404;
+}
+
+.intro-text {
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Comparison grid layout */
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.vehicle-column {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #0066cc;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0066cc;
+}
+
+.vehicle-title.telluride {
+    color: #c53030;
+    border-bottom-color: #c53030;
+}
+
+/* Vehicle images */
+.vehicle-images {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.comparison-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Feature boxes */
+.feature-box {
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.feature-box h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.feature-box ul {
+    padding-left: 20px;
+}
+
+.feature-box li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Benefits section */
+.benefits-section {
+    margin: 60px 0;
+}
+
+.benefits-section h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #2c3e50;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.benefit-card {
+    background-color: #e6f3ff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-card h4 {
+    color: #0066cc;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.benefit-card p {
+    line-height: 1.6;
+}
+
+/* Conclusion section */
+.conclusion-section {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 60px;
+}
+
+.conclusion-section h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.conclusion-section p {
+    line-height: 1.8;
+}
+
+/* Project notes section */
+.project-notes {
+    background-color: #f0f9ff;
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.project-notes h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.project-notes h4 {
+    margin: 25px 0 15px;
+    color: #3498db;
+}
+
+.project-notes ul {
+    padding-left: 20px;
+}
+
+.project-notes li {
+    margin-bottom: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .vehicle-title {
+        font-size: 1.5rem;
+    }
+}

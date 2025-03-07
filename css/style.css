@@ -1,3 +1,15 @@
+/* 
+  VERCEL DEPLOYMENT NOTES:
+  In a Vercel project, styling could be implemented using:
+  
+  1. CSS Modules for component-scoped styles
+  2. Tailwind CSS for utility-based styling
+  3. Styled-components or Emotion for CSS-in-JS
+  4. SASS/SCSS with component organization
+  
+  Vercel's build process would optimize and bundle CSS automatically.
+*/
+
 /* Base styles */
 * {
     margin: 0;
