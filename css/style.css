@@ -443,7 +443,7 @@ textarea {
 }
 
 .logo img {
-    height: 80px; /* increased from 40px to 80px */
+    height: 100px; /* increased from 40px to 100px */
     width: auto;
     margin-right: 10px;
     border-radius: 5px;
