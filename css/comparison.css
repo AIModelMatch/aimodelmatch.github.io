@@ -8,6 +8,9 @@
     margin-bottom: 30px;
     border-radius: 4px;
     backdrop-filter: blur(5px);
+    box-shadow: 
+        0 2px 10px rgba(0, 0, 0, 0.05),
+        0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 
 .comparison-notice p {
@@ -20,6 +23,22 @@
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--graphite-gray);
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.intro-text::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 10%;
+    right: 10%;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(0, 0, 0, 0.1) 20%, 
+        rgba(0, 0, 0, 0.1) 80%, 
+        transparent 100%);
 }
 
 /* Comparison grid layout */
@@ -34,14 +53,20 @@
     background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
     border-radius: 8px;
     padding: 25px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 
+        0 10px 20px rgba(0, 0, 0, 0.1),
+        0 1px 0 rgba(255, 255, 255, 0.5) inset;
     border: 1px solid rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
 
 .vehicle-column:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 
+        0 15px 30px rgba(0, 0, 0, 0.15),
+        0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 
 /* Using the same diode-blue for all vehicle titles for consistency */
@@ -53,6 +78,17 @@
     padding-bottom: 10px;
     border-bottom: 2px solid var(--diode-blue);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.vehicle-title::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 15%;
+    right: 15%;
+    bottom: -3px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* We'll keep this class but make it use the same color for consistency */
@@ -73,13 +109,18 @@
     width: 100%;
     height: auto;
     border-radius: 6px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 
+        0 5px 15px rgba(0, 0, 0, 0.1),
+        0 1px 0 rgba(255, 255, 255, 0.3) inset;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .comparison-image:hover {
     transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.15),
+        0 1px 0 rgba(255, 255, 255, 0.3) inset;
 }
 
 /* Feature boxes */
@@ -88,8 +129,12 @@
     border-radius: 6px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 
+        0 3px 10px rgba(0, 0, 0, 0.05),
+        0 1px 0 rgba(255, 255, 255, 0.7) inset;
     border: 1px solid rgba(0, 0, 0, 0.03);
+    position: relative;
+    z-index: 1;
 }
 
 .feature-box h4 {
@@ -98,6 +143,17 @@
     font-size: 1.3rem;
     border-bottom: 1px solid #eee;
     padding-bottom: 8px;
+    position: relative;
+}
+
+.feature-box h4::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 80%;
+    bottom: -1px;
+    background-color: var(--candy-apple-red);
 }
 
 .feature-box ul {
@@ -108,11 +164,33 @@
     margin-bottom: 10px;
     line-height: 1.5;
     color: var(--graphite-gray);
+    position: relative;
+}
+
+.feature-box li::before {
+    content: "•";
+    color: var(--candy-apple-red);
+    position: absolute;
+    left: -15px;
+    font-weight: bold;
 }
 
 /* Benefits section */
 .benefits-section {
     margin: 60px 0;
+    border-top: 1px dashed #d0d0d0;
+    border-bottom: 1px dashed #d0d0d0;
+    padding: 40px 0;
+    position: relative;
+}
+
+.benefits-section::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    right: 0;
+    border-top: 1px dashed #f5f5f5;
 }
 
 .benefits-section h3 {
@@ -122,17 +200,24 @@
     color: var(--diode-blue);
     position: relative;
     padding-bottom: 15px;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .benefits-section h3::after {
     content: "";
     position: absolute;
+    height: 2px;
+    left: -30px;
+    right: -30px;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: var(--candy-apple-red);
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(182, 0, 23, 0.3) 30%, 
+        rgba(182, 0, 23, 1) 50%, 
+        rgba(182, 0, 23, 0.3) 70%, 
+        transparent 100%);
 }
 
 .benefits-grid {
@@ -145,20 +230,38 @@
     background: linear-gradient(135deg, #e7e5df 0%, #d8d6d0 100%);
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 
+        0 8px 15px rgba(0, 0, 0, 0.08),
+        0 1px 0 rgba(255, 255, 255, 0.7) inset;
     transition: transform 0.3s;
     border: 1px solid rgba(0, 69, 172, 0.1);
+    position: relative;
+    z-index: 1;
 }
 
 .benefit-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 
+        0 12px 20px rgba(0, 0, 0, 0.12),
+        0 1px 0 rgba(255, 255, 255, 0.7) inset;
 }
 
 .benefit-card h4 {
     color: var(--diode-blue);
     margin-bottom: 15px;
     font-size: 1.3rem;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.benefit-card h4::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 70%;
+    bottom: 0;
+    background-color: var(--candy-apple-red);
 }
 
 .benefit-card p {
@@ -173,13 +276,31 @@
     border-radius: 8px;
     margin-bottom: 60px;
     border-left: 4px solid var(--diode-blue);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 
+        0 5px 15px rgba(0, 0, 0, 0.05),
+        0 1px 0 rgba(255, 255, 255, 0.7) inset;
+    position: relative;
 }
 
 .conclusion-section h3 {
     color: var(--diode-blue);
     margin-bottom: 20px;
     font-size: 1.6rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.conclusion-section h3::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 50%;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+        rgba(182, 0, 23, 1) 0%, 
+        rgba(182, 0, 23, 0) 100%);
 }
 
 .conclusion-section p {
@@ -195,9 +316,25 @@
     background: linear-gradient(135deg, var(--diode-blue) 0%, #0057d9 100%);
     border-radius: 8px;
     color: white;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 
+        0 10px 25px rgba(0, 0, 0, 0.15),
+        0 1px 0 rgba(255, 255, 255, 0.1) inset;
     position: relative;
     overflow: hidden;
+}
+
+.cta-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, 
+                rgba(255, 255, 255, 0.1) 0%, 
+                rgba(255, 255, 255, 0) 10%, 
+                rgba(0, 0, 0, 0.2) 100%);
+    pointer-events: none;
 }
 
 .cta-section::after {
@@ -241,14 +378,32 @@
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
-    transition: all 0.3s;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+    transition: all 0.2s;
+    box-shadow: 
+        0 5px 15px rgba(0, 0, 0, 0.2),
+        0 -1px 0 rgba(255, 255, 255, 0.7) inset,
+        0 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .cta-button:hover {
     background: #ffffff;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px) translateZ(0);
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.3),
+        0 -1px 0 rgba(255, 255, 255, 0.7) inset,
+        0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:active {
+    transform: translateY(1px) translateZ(0);
+    box-shadow: 
+        0 2px 5px rgba(0, 0, 0, 0.2),
+        0 -1px 0 rgba(255, 255, 255, 0.7) inset,
+        0 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* Project notes section */
@@ -258,11 +413,29 @@
     border-radius: 8px;
     border-left: 4px solid var(--diode-blue);
     margin-top: 40px;
+    box-shadow: 
+        0 5px 15px rgba(0, 0, 0, 0.05),
+        0 1px 0 rgba(255, 255, 255, 0.7) inset;
 }
 
 .project-notes h3 {
     color: var(--diode-blue);
     margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.project-notes h3::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 70%;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+        rgba(0, 69, 172, 1) 0%, 
+        rgba(0, 69, 172, 0) 100%);
 }
 
 .project-notes h4 {
@@ -277,6 +450,15 @@
 .project-notes li {
     margin-bottom: 8px;
     color: var(--graphite-gray);
+    position: relative;
+}
+
+.project-notes li::before {
+    content: "•";
+    color: var(--diode-blue);
+    position: absolute;
+    left: -15px;
+    font-weight: bold;
 }
 
 /* Responsive adjustments */
