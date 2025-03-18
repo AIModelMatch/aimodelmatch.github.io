@@ -2,7 +2,7 @@
 
 /* Page layout and sections */
 .comparison-notice {
-    background-color: rgba(255, 243, 205, 0.3);
+    background-color: rgba(231, 229, 223, 0.3);
     border-left: 4px solid var(--candy-apple-red);
     padding: 15px;
     margin-bottom: 30px;
@@ -44,6 +44,7 @@
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* Using the same diode-blue for all vehicle titles for consistency */
 .vehicle-title {
     text-align: center;
     font-size: 1.8rem;
@@ -54,9 +55,10 @@
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+/* We'll keep this class but make it use the same color for consistency */
 .vehicle-title.telluride {
-    color: var(--candy-apple-red);
-    border-bottom-color: var(--candy-apple-red);
+    color: var(--diode-blue);
+    border-bottom-color: var(--diode-blue);
 }
 
 /* Vehicle images */
@@ -140,12 +142,12 @@
 }
 
 .benefit-card {
-    background: linear-gradient(135deg, #e6f3ff 0%, #d9eeff 100%);
+    background: linear-gradient(135deg, #e7e5df 0%, #d8d6d0 100%);
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s;
-    border: 1px solid rgba(26, 58, 95, 0.1);
+    border: 1px solid rgba(0, 69, 172, 0.1);
 }
 
 .benefit-card:hover {
@@ -190,7 +192,7 @@
     text-align: center;
     margin: 60px 0;
     padding: 40px;
-    background: linear-gradient(135deg, var(--diode-blue) 0%, #2c5282 100%);
+    background: linear-gradient(135deg, var(--diode-blue) 0%, #0057d9 100%);
     border-radius: 8px;
     color: white;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -217,7 +219,7 @@
 }
 
 .cta-section h3 {
-    color: white;
+    color: var(--lacquer);
     font-size: 1.8rem;
     margin-bottom: 15px;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -227,12 +229,13 @@
     margin-bottom: 25px;
     font-size: 1.1rem;
     opacity: 0.9;
+    color: var(--lacquer);
 }
 
 .cta-button {
     display: inline-block;
-    background: linear-gradient(to bottom, var(--candy-apple-red), #a3172f);
-    color: white;
+    background: var(--lacquer);
+    color: var(--diode-blue);
     padding: 15px 30px;
     font-size: 1.1rem;
     font-weight: bold;
@@ -243,14 +246,14 @@
 }
 
 .cta-button:hover {
-    background: linear-gradient(to bottom, #d42e4a, var(--candy-apple-red));
+    background: #ffffff;
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Project notes section */
 .project-notes {
-    background-color: #f0f9ff;
+    background-color: rgba(231, 229, 223, 0.3);
     padding: 30px;
     border-radius: 8px;
     border-left: 4px solid var(--diode-blue);
