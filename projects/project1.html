@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2025 Honda Accord vs. Toyota Camry Comparison | AI Model Match</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/comparison.css">
+    <meta name="description" content="Detailed comparison of the 2025 Honda Accord and Toyota Camry sedans, analyzing performance, features, fuel economy, and value.">
+    <meta name="keywords" content="Honda Accord, Toyota Camry, sedan comparison, hybrid sedan, 2025 midsize sedan">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/comparison.min.css">
+    
+    <!-- Preload critical images -->
+    <link rel="preload" href="../images/accord-exterior.webp" as="image">
+    <link rel="preload" href="../images/camry-exterior.webp" as="image">
+    <link rel="preload" href="../images/profile.png" as="image">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
 </head>
 <!-- 
   VERCEL DEPLOYMENT NOTES:
@@ -20,7 +36,7 @@
     <header>
         <div class="container">
             <a href="../index.html" class="logo">
-                <img src="../images/profile.png" alt="AI Model Match Logo">
+                <img src="../images/profile.png" alt="AI Model Match Logo" width="100" height="100" loading="eager">
                 <h1>AI Model Match</h1>
             </a>
             <nav>
@@ -59,8 +75,8 @@
                         <h3 class="vehicle-title">Honda Accord Hybrid</h3>
                         
                         <div class="vehicle-images">
-                            <img src="../images/accord-exterior.webp" alt="2025 Honda Accord Exterior" class="comparison-image">
-                            <img src="../images/accord-interior.webp" alt="2025 Honda Accord Interior" class="comparison-image">
+                            <img src="../images/accord-exterior.webp" alt="2025 Honda Accord Exterior" class="comparison-image" width="600" height="400" loading="eager">
+                            <img src="../images/accord-interior.webp" alt="2025 Honda Accord Interior" class="comparison-image" width="600" height="400" loading="lazy">
                         </div>
                         
                         <div class="feature-box">
@@ -91,8 +107,8 @@
                         <h3 class="vehicle-title telluride">Toyota Camry Hybrid</h3>
                         
                         <div class="vehicle-images">
-                            <img src="../images/camry-exterior.webp" alt="2025 Toyota Camry Exterior" class="comparison-image">
-                            <img src="../images/camry-interior.webp" alt="2025 Toyota Camry Interior" class="comparison-image">
+                            <img src="../images/camry-exterior.webp" alt="2025 Toyota Camry Exterior" class="comparison-image" width="600" height="400" loading="eager">
+                            <img src="../images/camry-interior.webp" alt="2025 Toyota Camry Interior" class="comparison-image" width="600" height="400" loading="lazy">
                         </div>
                         
                         <div class="feature-box">
@@ -177,6 +193,7 @@
                         <li>Visual separation of content sections</li>
                         <li>Proper spacing and typography for readability</li>
                         <li>Mobile-friendly design that adapts to different screen sizes</li>
+                        <li>Performance optimizations (minified CSS, image dimensions, and preloading)</li>
                     </ul>
                 </section>
             </section>
