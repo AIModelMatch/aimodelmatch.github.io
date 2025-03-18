@@ -3,7 +3,7 @@
 /* Page layout and sections */
 .comparison-notice {
     background-color: rgba(255, 243, 205, 0.3);
-    border-left: 4px solid var(--velocity-red);
+    border-left: 4px solid var(--candy-apple-red);
     padding: 15px;
     margin-bottom: 30px;
     border-radius: 4px;
@@ -48,15 +48,15 @@
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 25px;
-    color: var(--racing-blue);
+    color: var(--diode-blue);
     padding-bottom: 10px;
-    border-bottom: 2px solid var(--racing-blue);
+    border-bottom: 2px solid var(--diode-blue);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .vehicle-title.telluride {
-    color: var(--velocity-red);
-    border-bottom-color: var(--velocity-red);
+    color: var(--candy-apple-red);
+    border-bottom-color: var(--candy-apple-red);
 }
 
 /* Vehicle images */
@@ -91,7 +91,7 @@
 }
 
 .feature-box h4 {
-    color: var(--racing-blue);
+    color: var(--diode-blue);
     margin-bottom: 15px;
     font-size: 1.3rem;
     border-bottom: 1px solid #eee;
@@ -117,7 +117,7 @@
     text-align: center;
     margin-bottom: 30px;
     font-size: 1.8rem;
-    color: var(--racing-blue);
+    color: var(--diode-blue);
     position: relative;
     padding-bottom: 15px;
 }
@@ -130,7 +130,7 @@
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
-    background: var(--velocity-red);
+    background: var(--candy-apple-red);
 }
 
 .benefits-grid {
@@ -154,7 +154,7 @@
 }
 
 .benefit-card h4 {
-    color: var(--racing-blue);
+    color: var(--diode-blue);
     margin-bottom: 15px;
     font-size: 1.3rem;
 }
@@ -170,12 +170,12 @@
     padding: 30px;
     border-radius: 8px;
     margin-bottom: 60px;
-    border-left: 4px solid var(--racing-blue);
+    border-left: 4px solid var(--diode-blue);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .conclusion-section h3 {
-    color: var(--racing-blue);
+    color: var(--diode-blue);
     margin-bottom: 20px;
     font-size: 1.6rem;
 }
@@ -190,7 +190,7 @@
     text-align: center;
     margin: 60px 0;
     padding: 40px;
-    background: linear-gradient(135deg, var(--racing-blue) 0%, #2c5282 100%);
+    background: linear-gradient(135deg, var(--diode-blue) 0%, #2c5282 100%);
     border-radius: 8px;
     color: white;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -231,7 +231,7 @@
 
 .cta-button {
     display: inline-block;
-    background: linear-gradient(to bottom, var(--velocity-red), #a3172f);
+    background: linear-gradient(to bottom, var(--candy-apple-red), #a3172f);
     color: white;
     padding: 15px 30px;
     font-size: 1.1rem;
@@ -243,7 +243,7 @@
 }
 
 .cta-button:hover {
-    background: linear-gradient(to bottom, #d42e4a, var(--velocity-red));
+    background: linear-gradient(to bottom, #d42e4a, var(--candy-apple-red));
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
@@ -253,18 +253,18 @@
     background-color: #f0f9ff;
     padding: 30px;
     border-radius: 8px;
-    border-left: 4px solid var(--racing-blue);
+    border-left: 4px solid var(--diode-blue);
     margin-top: 40px;
 }
 
 .project-notes h3 {
-    color: var(--racing-blue);
+    color: var(--diode-blue);
     margin-bottom: 15px;
 }
 
 .project-notes h4 {
     margin: 25px 0 15px;
-    color: var(--racing-blue);
+    color: var(--diode-blue);
 }
 
 .project-notes ul {
