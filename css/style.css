@@ -14,7 +14,7 @@
 :root {
     --diode-blue: #0045ac;
     --graphite-gray: #333841;
-    --Lacquer: #e7e5df;
+    --lacquer: #e7e5df;
     --candy-apple-red: #b60017;
     --carbon-black: #1e1e24;
 }
@@ -41,7 +41,7 @@ body {
 
 /* Header styles */
 header {
-    background: linear-gradient(135deg, var(--diode-blue) 0%, #0045ac 100%);
+    background: linear-gradient(135deg, var(--diode-blue) 0%, #0e5cd1 100%);
     color: var(--lacquer);
     padding: 20px 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -82,7 +82,7 @@ nav a:hover, nav a.active {
 
 /* Hero section */
 .hero {
-    background: linear-gradient(to right, var(--diode-blue), #0045ac);
+    background: linear-gradient(to right, var(--diode-blue), #0e5cd1);
     color: var(--lacquer);
     text-align: center;
     padding: 100px 0;
@@ -118,8 +118,8 @@ nav a:hover, nav a.active {
 /* Button styles */
 .btn {
     display: inline-block;
-    background: linear-gradient(to bottom, var(--candy-apple-red), #b60017);
-    color: var(--lacquer);
+    background: var(--lacquer);
+    color: var(--diode-blue);
     padding: 12px 24px;
     border-radius: 5px;
     text-decoration: none;
@@ -130,15 +130,15 @@ nav a:hover, nav a.active {
 }
 
 .btn:hover {
-    background: linear-gradient(to bottom, #b60017, var(--candy-apple-red));
+    background: #ffffff;
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .btn-small {
     display: inline-block;
-    background: linear-gradient(to bottom, var(--candy-apple-red), #b60017);
-    color: var(--lacquer);
+    background: var(--lacquer);
+    color: var(--diode-blue);
     padding: 8px 16px;
     border-radius: 5px;
     text-decoration: none;
@@ -148,7 +148,7 @@ nav a:hover, nav a.active {
 }
 
 .btn-small:hover {
-    background: linear-gradient(to bottom, #b60017, var(--candy-apple-red));
+    background: #ffffff;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -262,7 +262,7 @@ footer {
 
 /* Portfolio page styles */
 .page-header {
-    background: linear-gradient(to right, var(--diode-blue), #0045ac;
+    background: linear-gradient(to right, var(--diode-blue), #0e5cd1);
     color: var(--lacquer);
     text-align: center;
     padding: 60px 0;
@@ -418,7 +418,7 @@ footer {
 
 .skill-level {
     height: 100%;
-    background: linear-gradient(to right, var(--candy-apple-red), #b60017);
+    background: linear-gradient(to right, var(--candy-apple-red), #e80d25);
     border-radius: 6px;
     position: relative;
     overflow: hidden;
@@ -507,7 +507,7 @@ textarea {
 input:focus,
 textarea:focus {
     border-color: var(--diode-blue);
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 5px rgba(26, 58, 95, 0.2);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 69, 172, 0.2);
     outline: none;
 }
 
@@ -550,7 +550,7 @@ textarea {
     height: 100px;
     width: auto;
     margin-right: 15px;
-    /* Removed border-radius and box-shadow */
+    /* Removed border-radius and box-shadow to remove the "box" effect */
 }
 
 .logo h1 {
