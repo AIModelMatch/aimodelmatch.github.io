@@ -550,8 +550,7 @@ textarea {
     height: 100px;
     width: auto;
     margin-right: 15px;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    /* Removed border-radius and box-shadow */
 }
 
 .logo h1 {
