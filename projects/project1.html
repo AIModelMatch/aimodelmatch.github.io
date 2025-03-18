@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title | AI Model Match</title>
+    <title>2025 Honda Accord vs. Toyota Camry Comparison | AI Model Match</title>
     <link rel="stylesheet" href="../css/style.css">
-        <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-    <link rel="manifest" href="../site.webmanifest">
+    <link rel="stylesheet" href="../css/comparison.css">
 </head>
+<!-- 
+  VERCEL DEPLOYMENT NOTES:
+  In a Vercel-based project, this could be implemented as:
+  
+  1. A dynamic page using Next.js (pages/projects/[slug].js)
+  2. Content could be stored in markdown or a headless CMS
+  3. Images would be optimized through Next/Image component
+  4. Styles could use CSS modules or a framework like Tailwind
+-->
 <body>
     <header>
         <div class="container">
             <a href="../index.html" class="logo">
-                <img src="../images/logo.webp" alt="AI Model Match Logo">
+                <img src="../images/profile.png" alt="AI Model Match Logo">
                 <h1>AI Model Match</h1>
             </a>
             <nav>
@@ -31,43 +35,152 @@
     </header>
 
     <main>
-        <section class="project-detail">
-            <div class="container">
-                <h2>Project Title</h2>
+        <div class="container">
+            <section class="project-detail">
+                <h2>2025 Honda Accord vs. 2025 Toyota Camry</h2>
                 
-                <div class="project-image-large">
-                    <img src="../images/project1.webp" alt="Project 1">
+                <div class="comparison-notice">
+                    <p>This is a portfolio demonstration showcasing web design and comparison content. All information is for illustrative purposes only.</p>
                 </div>
                 
-                <div class="project-info">
-                    <h3>Project Overview</h3>
+                <section class="intro-text">
                     <p>
-                        This is a detailed description of the project. It explains the purpose of the project, 
-                        the client's needs, and how the solution addresses those needs. This section gives 
-                        context to the project and helps visitors understand its significance.
+                        In the competitive midsize sedan segment, the 2025 Honda Accord stands out as a 
+                        compelling choice, offering refined engineering excellence, sophisticated design, and 
+                        outstanding value. When compared to the Toyota Camry, the Accord demonstrates superior 
+                        interior quality and a more engaging driving experience. Let's explore how these two 
+                        vehicles measure up across key categories.
                     </p>
+                </section>
+
+                <div class="comparison-grid">
+                    <!-- Honda Accord Column -->
+                    <div class="vehicle-column">
+                        <h3 class="vehicle-title">Honda Accord Hybrid</h3>
+                        
+                        <div class="vehicle-images">
+                            <img src="../images/accord-exterior.webp" alt="2025 Honda Accord Exterior" class="comparison-image">
+                            <img src="../images/accord-interior.webp" alt="2025 Honda Accord Interior" class="comparison-image">
+                        </div>
+                        
+                        <div class="feature-box">
+                            <h4>Key Advantages</h4>
+                            <ul>
+                                <li>204 HP Hybrid Powertrain</li>
+                                <li>44 MPG Combined Fuel Economy</li>
+                                <li>Spacious, Premium Interior Materials</li>
+                                <li>Standard Honda Sensing® Safety Suite</li>
+                                <li>Refined Ride and Handling Balance</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-box">
+                            <h4>Technology Features</h4>
+                            <ul>
+                                <li>12.3-inch Digital Instrument Cluster</li>
+                                <li>Wireless Apple CarPlay & Android Auto</li>
+                                <li>Head-Up Display Available</li>
+                                <li>Bose Premium Sound System Option</li>
+                                <li>Google Built-in with Assistant</li>
+                            </ul>
+                        </div>
+                    </div>
                     
-                    <h3>Technologies Used</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>Responsive Design</li>
-                    </ul>
-                    
-                    <h3>Key Features</h3>
-                    <p>
-                        This section highlights the most important aspects of the project. It can include special 
-                        functionality, design elements, or technical achievements that make this project noteworthy.
-                    </p>
-                    
-                    <div class="project-buttons">
-                        <a href="#" class="btn">Live Demo</a>
-                        <a href="#" class="btn">View Code</a>
+                    <!-- Toyota Camry Column -->
+                    <div class="vehicle-column">
+                        <h3 class="vehicle-title telluride">Toyota Camry Hybrid</h3>
+                        
+                        <div class="vehicle-images">
+                            <img src="../images/camry-exterior.webp" alt="2025 Toyota Camry Exterior" class="comparison-image">
+                            <img src="../images/camry-interior.webp" alt="2025 Toyota Camry Interior" class="comparison-image">
+                        </div>
+                        
+                        <div class="feature-box">
+                            <h4>Features</h4>
+                            <ul>
+                                <li>208 HP Hybrid System</li>
+                                <li>51 MPG Combined Fuel Economy</li>
+                                <li>Available All-Wheel Drive</li>
+                                <li>Toyota Safety Sense™ 2.5+</li>
+                                <li>Slightly Higher Starting Price</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-box">
+                            <h4>Technology Features</h4>
+                            <ul>
+                                <li>10-inch Digital Instrument Panel</li>
+                                <li>12.3-inch Multimedia Touchscreen</li>
+                                <li>Wireless Smartphone Integration</li>
+                                <li>JBL Audio System Available</li>
+                                <li>Remote Connect Smart Watch Integration</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+                
+                <section class="benefits-section">
+                    <h3>Key Considerations for Sedan Buyers</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <h4>Performance & Efficiency</h4>
+                            <p>The Accord offers a more engaging driving experience with responsive handling, while the Camry provides slightly better fuel economy. The Camry is the only option with available AWD for those in snowy climates.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Interior Comfort</h4>
+                            <p>The Accord features more premium materials and slightly more rear legroom, while the Camry offers a straightforward layout with excellent visibility and easy-to-use controls for those who prefer simplicity.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Reliability & Value</h4>
+                            <p>Both sedans offer exceptional reliability records and strong resale value. The Accord typically provides more standard features at each trim level, while the Camry has a slight edge in total cost of ownership.</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="conclusion-section">
+                    <h3>Conclusion</h3>
+                    <p>
+                        Both the 2025 Honda Accord and Toyota Camry represent excellent choices in the midsize sedan 
+                        category. The Accord stands out with its more premium interior materials, engaging driving 
+                        dynamics, and slightly more spacious cabin. Meanwhile, the Camry edges ahead with superior fuel 
+                        economy, available all-wheel drive, and Toyota's renowned reliability reputation.
+                    </p>
+                    <p>
+                        Your choice ultimately depends on priorities: drivers seeking a more engaging experience with 
+                        premium touches will prefer the Accord, while those prioritizing maximum efficiency and all-weather 
+                        capability might lean toward the Camry. Both vehicles offer exceptional safety features, modern 
+                        technology, and long-term value that continue to make sedans relevant in today's SUV-dominated market.
+                    </p>
+                </section>
+
+                <section class="cta-section">
+                    <div class="cta-container">
+                        <h3>Ready to explore the 2025 Honda Accord?</h3>
+                        <p>Browse our inventory to find the perfect Accord for your lifestyle and schedule a test drive today.</p>
+                        <a href="#" class="cta-button">Search Accord Inventory</a>
+                    </div>
+                </section>  
+                            
+                <!-- Project Details Section -->
+                <section class="project-notes">
+                    <h3>About This Project</h3>
+                    <p>
+                        This comparison page demonstrates my ability to create structured content with a clear visual hierarchy.
+                        The design focuses on presenting information in an easily digestible format, using a two-column layout
+                        for direct comparison and color-coding to distinguish between the vehicles.
+                    </p>
+                    
+                    <h4>Features Implemented:</h4>
+                    <ul>
+                        <li>Responsive two-column comparison grid</li>
+                        <li>Custom styling for feature boxes</li>
+                        <li>Visual separation of content sections</li>
+                        <li>Proper spacing and typography for readability</li>
+                        <li>Mobile-friendly design that adapts to different screen sizes</li>
+                    </ul>
+                </section>
+            </section>
+        </div>
     </main>
 
     <footer>
