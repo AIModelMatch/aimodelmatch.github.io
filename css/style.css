@@ -771,3 +771,22 @@ textarea {
         margin-bottom: 15px;
     }
 }
+
+/* Responsive image handling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo img {
+    display: block;
+    max-height: 50px;
+    width: auto;
+}
+
+/* Adjust these values based on your specific logo dimensions */
+@media (max-width: 768px) {
+    .logo img {
+        max-height: 40px; /* Slightly smaller on mobile */
+    }
+}
